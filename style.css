@@ -20,10 +20,11 @@ body{
 }
 
 .navbar{
+
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 4%;
+    padding: 0.8rem 5%;
     background-color: #FFC600 ;
     border-bottom: 1px #15222C solid;
     position: fixed;
@@ -37,13 +38,12 @@ body{
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     
 
 }
 
 .navbar .logo a{
-    /* display: flex; */
     margin-left: 2rem;
     font-weight: 700;
     color: #193549;
@@ -53,8 +53,57 @@ body{
 }
 
 .navbar .logo img{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 }
+
+.navbar .navbar-nav a:hover{
+    color: rgb(8, 2, 27);
+    font-size: 1.2rem;
+}
+.navbar .navbar-nav a::after{
+    content: '';
+
+
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid rgb(10, 10, 43);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-nav a{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+    color: #193549;
+    font-weight: 600;
+    background: 2rem #15222c17;
+    /* border: 0.5rem solid #15212b15; */
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
