@@ -17,8 +17,11 @@ rafa kntl
 body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: #193549;
+    margin: 0;
     /* min-height: 10000px; */
 }
+
+/* navbar start */
 
 .navbar{
 
@@ -99,7 +102,9 @@ body{
 #menu{
     display: none;
 }
+/* navbar end */
 
+/* hero section start */
 .hero-section{
     display: flex;
     min-height: 100vh;
@@ -135,6 +140,56 @@ body{
     width: 25rem;
     margin-right: 10rem;
 }
+/* hero section end */
+
+
+/* about section start*/
+
+section #about{
+    background-color: #15222C;
+}
+.about{
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* margin-top: 5rem; */
+    background-color: #15222C;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.about .about-tittle{
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+
+.about .about-tittle p{
+    font-weight: 700;
+    width: 40%;
+}
+.about .about-tittle span{
+    color: #FFC600;
+}
+
+.about .about-content{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-content1{
+    
+}
+
+
+
+
+/* about section end */
 
 
 
