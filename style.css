@@ -145,17 +145,11 @@ body{
 
 /* about section start*/
 
-section #about{
-    background-color: #15222C;
-}
 .about{
-    /* min-height: 100vh; */
-    /* display: flex; */
-    /* margin-top: 5rem; */
     background-color: #15222C;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .about .about-tittle{
@@ -177,21 +171,96 @@ section #about{
 .about .about-content{
     margin-left: 6rem;
     margin-right: 6rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.about .about-content1{
+    /* font-size: 1.3rem; */
     
 }
 
+.about .about-content .about-content1{
+    font-weight: 600;
+    margin-right: 2rem;
+}
+.about .about-content .about-content2{
+    font-weight: 600;
+}
 
+.about .about-content .about-content1 h5{ 
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFC600;
+    margin-bottom: 1rem;
+}
+.about .about-content .about-content2 h5{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFC600;
+    margin-bottom: 1rem;
+}
 
-
+.about .about-content .about-content1 p{
+    font-weight: 400;
+    color: #fff;
+    width: 85%;
+}
+.about .about-content .about-content2 p{
+    font-weight: 400;
+    color: #fff;
+    width: 85%;
+}
 /* about section end */
 
+/* product section start */
+.product{
+    background-color: #FFC600;
+    margin-top: 0;
+    padding-top: 5rem;
+}
 
+.product .product-tittle{
+    margin-left: 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 55%;
+    color: #15222C;
+    margin-bottom: 5rem;
+}
+
+.product .product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.product-container .product-content1,
+.product-container .product-content2,
+.product-container .product-content3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: auto;
+}
+
+.product-container .product-content1 img,
+.product-container .product-content2 img,
+.product-container .product-content3 img{
+    border-radius: 20px;
+}
+
+.product-container .product-content1 p,
+.product-container .product-content2 p,
+.product-container .product-content3 p{
+    margin-top: 2rem;
+    color: #15222C;
+    text-align: center ;
+}
+/* product section end */
 
 
 
@@ -219,7 +288,7 @@ section #about{
         right: -100%;
         background-color: #15222C;
         width: 30rem;
-        height: 100vh;
+        height: 35vh;
     }
 
     .navbar .navbar-nav.active{
@@ -282,6 +351,26 @@ section #about{
         width: 25rem;
         margin: 10rem;
     }
+
+    .about{
+        min-height: 50vh;
+    }
+
+    .about .about-tittle p{
+        width: 80%;
+    }
+    .about .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product .product-container{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+
 }
 /* mobile */
 @media screen and (max-width: 350px) {
