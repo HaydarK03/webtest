@@ -281,11 +281,13 @@ body{
 
 .contact-content{
     display: flex;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     margin-left: 6rem;
-    max-width: 60%;
+    margin-right: 2rem;
+    max-width: 80%;
     color: #fff;
     font-size: 1rem;
 }
@@ -294,13 +296,32 @@ body{
     margin-right: 5rem;
 }
 
-.contact-button{
+.button{
     display: flex;
     flex-direction: row;
+    /* margin-right: 2rem; */
+    justify-content: space-between;
 }
 
-.contact-button .button-email{
-    border: 1px #FFC600;
+.button-email a{
+    text-decoration: none;
+    color: #15222C;
+    border: #FFC600;
+    margin-right: 5rem;
+    padding: 5px 10px 5px 10px;
+    border: solid #FFC600;
+    border-radius: 20px;
+    background-color: #FFC600;
+}
+
+.button-whatsapp a{
+    text-decoration: none;
+    border: #FFC600;
+    margin-right: 5rem;
+    color: #FFC600;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #FFC600;
+    border-radius: 20px;
 }
 
 /* contact section end */
@@ -329,7 +350,7 @@ body{
         right: -100%;
         background-color: #15222C;
         width: 30rem;
-        height: 35vh;
+        height: 100vh;
     }
 
     .navbar .navbar-nav.active{
@@ -357,6 +378,10 @@ body{
         transform: scaleX(0);
         transition: 0.2s linear;
     }
+
+    
+
+    
 
 
 
@@ -410,6 +435,29 @@ body{
         flex-direction: column;
         margin: 2rem;
     }
+
+    .product-container .product-content1,
+    .product-container .product-content2,
+    .product-container .product-content3{
+        width: 80%;
+    }
+
+    .contact .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button{
+        margin-top: 5rem;
+    }
+
+    .contact{
+        background-color: #15222C;
+        min-height: 60vh;
+        margin-top: 0;
+        padding-top: 9rem;
+    }
+    
 
 
 }
