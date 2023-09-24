@@ -329,7 +329,7 @@ body{
 /* contact section end */
 
 /* footer start */
-.footer{
+footer{
     background-color: #FFC600;
     padding: 1.5rem;
     /* position: absolute; */
@@ -337,6 +337,8 @@ body{
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .footer-nav a{
@@ -410,6 +412,14 @@ body{
         font-size: 75%;
     }
     
+    
+    .footer-nav a{
+        font-size: 11px;
+    }
+    
+    .credit p, a{
+        font-size: 11px;
+    }
 
     
 
@@ -492,6 +502,14 @@ body{
     
     .footer{
         font-size: 60%;
+    }
+
+    .footer-nav a{
+        font-size: 8px;
+    }
+    
+    .credit p, a{
+        font-size: 8px;
     }
 
 }
