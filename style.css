@@ -233,6 +233,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-bottom: 3rem;
+    margin-bottom: 0;
 }
 
 .product-container .product-content1,
@@ -268,6 +269,7 @@ body{
     min-height: 40vh;
     margin-top: 0;
     padding-top: 5rem;
+    /* position: absolute; */
 }
 
 .contact-tittle{
@@ -326,8 +328,33 @@ body{
 
 /* contact section end */
 
+/* footer start */
+.footer{
+    background-color: #FFC600;
+    padding: 1.5rem;
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-nav a{
+    color: #193549;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.credit p, a{
+    font-size: 12px;
+    text-decoration: none;
+}
 
 
+
+/* footer end */
 
 /* media queries */
 /* laptop */
@@ -379,6 +406,9 @@ body{
         transition: 0.2s linear;
     }
 
+    .footer{
+        font-size: 75%;
+    }
     
 
     
@@ -420,6 +450,7 @@ body{
 
     .about{
         min-height: 50vh;
+        padding-bottom: 4rem;
     }
 
     .about .about-tittle p{
@@ -434,6 +465,7 @@ body{
         display: flex;
         flex-direction: column;
         margin: 2rem;
+        margin-bottom: 0;
     }
 
     .product-container .product-content1,
@@ -441,6 +473,13 @@ body{
     .product-container .product-content3{
         width: 80%;
     }
+    
+    .contact{
+        background-color: #15222C;
+        min-height: 40vh;
+        margin-top: 0;
+        padding-top: 9rem;
+        }
 
     .contact .contact-content{
         display: flex;
@@ -450,15 +489,10 @@ body{
     .button{
         margin-top: 5rem;
     }
-
-    .contact{
-        background-color: #15222C;
-        min-height: 60vh;
-        margin-top: 0;
-        padding-top: 9rem;
-    }
     
-
+    .footer{
+        font-size: 60%;
+    }
 
 }
 /* mobile */
@@ -466,5 +500,6 @@ body{
     html{
         font-size: 55%;
     }
+
 }
 
