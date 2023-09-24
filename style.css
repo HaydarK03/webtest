@@ -1,10 +1,3 @@
-/* color
- elemen : #FFC600
- bg1: #193549
- bg2: #15222C
-*/
-rafa kntl
-
 *{
     margin: 0;
     padding: 0;
@@ -18,13 +11,12 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: #193549;
     margin: 0;
-    /* min-height: 10000px; */
 }
 
+
+
 /* navbar start */
-
 .navbar{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,8 +35,6 @@ body{
     position: relative;
     align-items: center;
     justify-content: left;
-    
-
 }
 
 .navbar .logo a{
@@ -55,7 +45,6 @@ body{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-
 }
 
 .navbar .logo img{
@@ -63,7 +52,6 @@ body{
     height: 2.5rem;
     border-radius: 50%;
 }
-
 
 .navbar .navbar-nav a{
     display: inline-block ;
@@ -76,7 +64,6 @@ body{
     font-weight: 600;
     font-size: 0.8rem;
     background: 2rem #15222c17;
-    /* border: 0.5rem solid #15212b15; */
     border-radius: 20px;
     padding: 8px 10px;
     text-decoration: none;
@@ -89,7 +76,6 @@ body{
 .navbar .navbar-nav a::after{
     content: '';
     display: block;
-    /* padding-bottom: 0.2rem; */
     border-bottom: 0.1rem solid rgb(10, 10, 43);
     transform: scaleX(0);
     transition: 0.2s linear;
@@ -103,6 +89,8 @@ body{
     display: none;
 }
 /* navbar end */
+
+
 
 /* hero section start */
 .hero-section{
@@ -122,12 +110,12 @@ body{
     font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
-
 }
 
 .hero-section .content button{
     font-size: 1rem;
     color: #15222C;
+    margin-top: 1.5rem;
     font-weight: bold;
     border: none;
     background-color: #FFC600;
@@ -143,13 +131,14 @@ body{
 /* hero section end */
 
 
-/* about section start*/
 
+/* about section start*/
 .about{
     background-color: #15222C;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
+    padding-top: 5rem;
 }
 
 .about .about-tittle{
@@ -164,6 +153,7 @@ body{
     font-weight: 700;
     width: 40%;
 }
+
 .about .about-tittle span{
     color: #FFC600;
 }
@@ -175,42 +165,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: 1.3rem; */
-    
 }
 
-.about .about-content .about-content1{
+.about .about-content .about-content1, 
+.about .about-content .about-content2{
     font-weight: 600;
     margin-right: 2rem;
 }
-.about .about-content .about-content2{
-    font-weight: 600;
-}
 
-.about .about-content .about-content1 h5{ 
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: #FFC600;
-    margin-bottom: 1rem;
-}
-.about .about-content .about-content2 h5{
+.about .about-content .about-content1 h5, 
+.about .about-content .about-content2 h5{ 
     font-weight: 600;
     font-size: 1.5rem;
     color: #FFC600;
     margin-bottom: 1rem;
 }
 
-.about .about-content .about-content1 p{
-    font-weight: 400;
-    color: #fff;
-    width: 85%;
-}
+.about .about-content .about-content1 p, 
 .about .about-content .about-content2 p{
     font-weight: 400;
     color: #fff;
     width: 85%;
 }
 /* about section end */
+
+
 
 /* product section start */
 .product{
@@ -263,13 +242,14 @@ body{
 }
 /* product section end */
 
+
+
 /* contact section start */
 .contact{
     background-color: #15222C;
     min-height: 40vh;
     margin-top: 0;
     padding-top: 5rem;
-    /* position: absolute; */
 }
 
 .contact-tittle{
@@ -301,7 +281,6 @@ body{
 .button{
     display: flex;
     flex-direction: row;
-    /* margin-right: 2rem; */
     justify-content: space-between;
 }
 
@@ -325,14 +304,14 @@ body{
     border: 2px solid #FFC600;
     border-radius: 20px;
 }
-
 /* contact section end */
+
+
 
 /* footer start */
 footer{
     background-color: #FFC600;
     padding: 1.5rem;
-    /* position: absolute; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -353,12 +332,13 @@ footer{
     font-size: 12px;
     text-decoration: none;
 }
-
-
-
 /* footer end */
 
+
+
+
 /* media queries */
+
 /* laptop */
 @media screen and (max-width: 1340px) {
     html{
@@ -412,7 +392,6 @@ footer{
         font-size: 75%;
     }
     
-    
     .footer-nav a{
         font-size: 11px;
     }
@@ -420,12 +399,10 @@ footer{
     .credit p, a{
         font-size: 11px;
     }
-
-    
-
-
-
 }
+
+
+
 /* tablet */
 @media screen and (max-width: 750px) {
     html{
@@ -511,13 +488,14 @@ footer{
     .credit p, a{
         font-size: 8px;
     }
-
 }
+
+
+
 /* mobile */
 @media screen and (max-width: 350px) {
     html{
         font-size: 55%;
     }
-
 }
 
